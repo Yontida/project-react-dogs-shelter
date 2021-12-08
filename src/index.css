@@ -1,10 +1,18 @@
-body {
+/* * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+
+body {
+  /* margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
+  font-family: "Playfair Display", sans-serif
 }
 
 /* code {
@@ -22,15 +30,18 @@ body {
   background-color: burlywood;
 }
 
+.card {
+  margin: 1rem;
+}
+
 .class-body{
   max-width: 50%;
+  /* text-align: center; */
+  margin: 1rem;
 }
 
 img {
   max-width: 40%;
 }
 
-.dogs-name {
-  text-align: left;
-}
 
