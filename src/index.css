@@ -16,3 +16,21 @@ body {
   text-align: center;
   /* background-color: cadetblue; */
 }
+
+.all-dogs-header{
+  text-align: center;
+  background-color: burlywood;
+}
+
+.class-body{
+  max-width: 50%;
+}
+
+img {
+  max-width: 40%;
+}
+
+.dogs-name {
+  text-align: left;
+}
+

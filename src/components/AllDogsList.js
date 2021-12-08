@@ -1,19 +1,19 @@
 import React from "react";
+import DogCard from "./DogCard";
 
-function AllDogsList(props) {
+function AllDogsList( {dogs} ) {
   return (
     <div >
-      <h2>All DOGS</h2>
+      <div className="all-dogs-header"> <h2>All DOGS</h2> </div>
 
-      <br></br>
-
-      {/* {props.dogs.map( (eachDogObj) => {
-
-
-        return eachDogObj.image
+      {dogs.map( (eachDogObj) => 
         
-      }
-      )} */}
+        <DogCard 
+            key={eachDogObj.id}
+            dogData={eachDogObj}
+        />
+      
+        )}
 
     </div>
   );

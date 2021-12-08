@@ -36,25 +36,9 @@ useEffect( () => {
   return (
     <div >
 
-      <h2>Hey - testing DogMainContainer</h2>
-      <br></br>
-
-      {/* <AllDogsList 
+      <AllDogsList 
           dogs={dogs}
-      /> */}
-
-        {dogs.map( (eachDogObj) => {
-
-
-        return (
-          <>
-        <h5>{eachDogObj.name}</h5>
-        <img src={eachDogObj.image} />
-        </>
-        )
-
-        }
-        )}
+      />
 
 
     </div>
