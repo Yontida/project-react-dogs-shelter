@@ -1,0 +1,24 @@
+{
+    "dogs": [
+       {
+     "id": 1,
+     "name": "Percy",
+     "image": "./image/percy.jpeg",
+     "breed": "Beagle",
+     "size": "Medium",
+     "age": "3",
+     "foster": true
+       },
+
+       {
+     "id": 2,
+     "name": "Champ",
+     "image": "./image/champ.jpg",
+     "breed": "Pitbull",
+     "size": "Large",
+     "age": "4",
+     "foster": false
+       }
+     ]
+   
+}
