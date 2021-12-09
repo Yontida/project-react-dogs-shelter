@@ -7,12 +7,12 @@ function AddNewDogForm( { handleAddNewDog } ) {
   const [ breed, setBreed ] = useState("");
   const [ size, setSize ] = useState("");
   const [ age, setAge ] = useState("");
-  const [ foster, setFoster ] = useState(true);
-  const [ adopted, setAdopted ] = useState(true);
+  const [ foster, setFoster ] = useState(false);
+  const [ adopted, setAdopted ] = useState(false);
 
   
 const handleSubmit = (event) => {
-    event.preventDefault();
+    // event.preventDefault();
 
     const newDogForm = {
       name,
@@ -78,18 +78,32 @@ const handleSubmit = (event) => {
             onChange={(event) => setBreed(event.target.value)}
           /><br></br><br></br>
 
+
+          <label htmlFor="image">Size: </label>
+          <input
+            type="text"
+            id="size"
+            name="size"
+            value={size}
+            onChange={(event) => setSize(event.target.value)}
+          /><br></br><br></br>
+
+          <label htmlFor="image">Age: </label>
+          <input
+            type="text"
+            id="age"
+            name="age"
+            value={age}
+            onChange={(event) => setAge(event.target.value)}
+          /><br></br><br></br>
+
+
           <button type="submit">Add Dog</button>
           <br></br><br></br>
 
         </form>
       </section>
 
-      
-
-      size,
-      age,
-      foster,
-      adopted,
 
 
     </div>

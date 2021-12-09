@@ -10,12 +10,14 @@ function AllDogsList( { dogs } ) {
     <div>
       <div className="route-header"> <h2>All DOGS</h2> </div>
 
-      <label htmlFor="phase">Status : </label>
+
+      {/* FIlter bar */}
+      {/* <label htmlFor="phase">Status : </label>
         <select onChange={(event) => console.log("Choose status")}
         >
           <option value="true">In Shelter</option>
           <option value="false">Adopted</option>
-        </select>
+        </select> */}
 
       <div>
       {dogs.map( (eachDogObj) => 

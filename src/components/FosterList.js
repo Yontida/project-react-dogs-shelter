@@ -4,8 +4,9 @@ import FosterCard from "./FosterCard";
 function FosterList( {fosters} ) {
   return (
     <div >
-      <div className="route-header"> <h2>Dogs Available For Foster</h2> </div>
+      <div className="route-header"> <h2>Dogs In Foster Home</h2> </div>
 
+      <ul className="cards">
       {fosters.map( (eachDogObj) => 
 
       <FosterCard 
@@ -13,7 +14,7 @@ function FosterList( {fosters} ) {
           fosterData={eachDogObj}
       />
       )}
-      
+      </ul>
 
     </div>
   );

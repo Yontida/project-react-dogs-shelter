@@ -15,7 +15,7 @@ body {
 .header{
   height: 100px;
   text-align: center;
-  background-color: rgb(242, 201, 145);;
+  background-color: rgb(242, 201, 145);
 }
 
 .route-header{
@@ -25,19 +25,52 @@ body {
   /* background-color: rgb(242, 201, 145);; */
 }
 
+.button {
+  background-color: rgb(242, 201, 145);
+  text-align: right;
+}
 
-
-.class-body{ 
+.button-1 {
+  background-color: burlywood; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
   text-align: center;
-  /* flex-wrap: wrap; */
-  /* flex-direction: column; */
-  /* max-height: 310px; */
-  /* max-width: 400px; */
-  /* width: 100%;  */
-  /* max-width: 40%; */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+
+.button-2 {
+  background-color: bisque; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+.button-3 {
+  background-color: burlywood; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* .class-body{ 
+  text-align: center;
   margin: 1rem;
   flex-direction: row-reverse;
-}
+} */
 
 img {
   max-width: 20%;
@@ -52,9 +85,22 @@ section {
 }
 
 
-
 .foster-card{
   text-align: center;
   margin: 1rem;
 }
+
+.cards {
+  list-style: none;
+  flex-wrap: wrap;
+  flex: 200px;
+}
+
+.card {
+  margin: 1rem;
+  list-style: none;
+}
+
+
+
 

@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import AllDogsList from "./AllDogsList";
 import AddNewDogForm from "./AddNewDogForm";
 import FosterList from "./FosterList";
+import NavBar from "./NavBar";
+
+// import { Route } from "react-router-dom";
 
 
 function DogMainContainer() {
@@ -10,6 +13,7 @@ function DogMainContainer() {
   console.log("STATE of dogs: ", dogs)
 
   const [ fosters, setFosters ] = useState( [] )
+  // const [page, setPage] = useState("/")
 
   const baseURL = "http://localhost:3000/dogs"
 
@@ -34,27 +38,33 @@ function DogMainContainer() {
 
 
 const handleAddNewDog = (newDog) => {
-  let newDogArray = [ newDog, ...dogs ];
+  let newDogArray = [ ...dogs, newDog ];
   setDogs(newDogArray);
 }
 
 
   return (
     <div >
+      {/* <NavBar onChangePage={setPage} /> */}
+      <NavBar />
 
-
+      {/* <Route path="/"> */}
       <AllDogsList 
           dogs={dogs}
-
       />
+      {/* </Route> */}
 
+      {/* <Route path="/new"> */}
       <AddNewDogForm 
           handleAddNewDog={handleAddNewDog}
       />
+      {/* </Route> */}
 
+      {/* <Route path="/fosters"> */}
       <FosterList 
           fosters={fosters}
       />
+      {/* </Route> */}
 
 
     </div>

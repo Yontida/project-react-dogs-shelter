@@ -1,17 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 
 
 function DogCard( { dogData } ) {
 
-const [ isInShelter, setIsInShelter ] =  useState(true)
+// const [ isInShelter, setIsInShelter ] =  useState(true)
 
-const handleToggleAdopt = (dogsObj) => {
-    setIsInShelter( (isInShelter ) => !isInShelter )
-  }
+// const handleToggleAdopt = (dogsObj) => {
+//     setIsInShelter( (isInShelter ) => !isInShelter )
+//   }
 
 
   return (
-    <div className="class-body">
+    <div >
+
+      <li className="card"> 
         <img src={dogData.image} alt={dogData.name} />
         <h3>{dogData.name}</h3>
         <p>Breed: {dogData.breed}</p>
@@ -21,14 +23,15 @@ const handleToggleAdopt = (dogsObj) => {
 
 
       {/* Button handleToggleAdopt */}
-      {isInShelter ? (
+      {/* {isInShelter ? (
         <button className="primary" onClick={handleToggleAdopt}>
           In Shelter
         </button>
       ) : (
         <button onClick={handleToggleAdopt}>Adopted</button>
-      )}
+      )} */}
 
+    </li>
     </div>
   );
 }
