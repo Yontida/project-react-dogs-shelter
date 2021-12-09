@@ -4,7 +4,14 @@ import AddNewDogForm from "./AddNewDogForm";
 import FosterList from "./FosterList";
 import NavBar from "./NavBar";
 
-// import { Route } from "react-router-dom";
+// import { Route } from 'react-router-dom';
+// import { BrowserRouter as Route , Switch } from 'react-router-dom';
+
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 
 
 function DogMainContainer() {
@@ -13,7 +20,6 @@ function DogMainContainer() {
   console.log("STATE of dogs: ", dogs)
 
   const [ fosters, setFosters ] = useState( [] )
-  // const [page, setPage] = useState("/")
 
   const baseURL = "http://localhost:3000/dogs"
 
@@ -44,30 +50,56 @@ const handleAddNewDog = (newDog) => {
 
 
   return (
+
     <div >
-      {/* <NavBar onChangePage={setPage} /> */}
+     
       <NavBar />
 
-      {/* <Route path="/"> */}
+      {/* <Router> */}
+      {/* <Switch> */}
+
+      <BrowserRouter>
+      <Routes>
+
+      <Route path="/" element={<AllDogsList 
+          dogs={dogs}
+      />} />
+
+      {/* <Route exact path="/">
       <AllDogsList 
           dogs={dogs}
       />
-      {/* </Route> */}
+      </Route> */}
 
-      {/* <Route path="/new"> */}
+      <Route path="/new" element={<AddNewDogForm 
+          handleAddNewDog={handleAddNewDog}
+      />} />
+
+      {/* <Route exact path="/new">
       <AddNewDogForm 
           handleAddNewDog={handleAddNewDog}
       />
-      {/* </Route> */}
+      </Route> */}
 
-      {/* <Route path="/fosters"> */}
+      <Route path="/fosters" element={<FosterList 
+          fosters={fosters}
+      />} />
+
+      {/* <Route exact path="/fosters">
       <FosterList 
           fosters={fosters}
       />
-      {/* </Route> */}
+      </Route> */}
 
+
+      </Routes>
+    </BrowserRouter>
+
+    {/* </Switch> */}
+    {/* </Router> */}
 
     </div>
+
   );
 }
 

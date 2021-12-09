@@ -1,5 +1,6 @@
 import React from "react";
 import DogCard from "./DogCard";
+import SearchBar from "./SearchBar";
 
 function AllDogsList( { dogs } ) {
 
@@ -18,6 +19,8 @@ function AllDogsList( { dogs } ) {
           <option value="true">In Shelter</option>
           <option value="false">Adopted</option>
         </select> */}
+
+       <SearchBar /> 
 
       <div>
       {dogs.map( (eachDogObj) => 
