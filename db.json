@@ -1,26 +1,24 @@
 {
-    "dogs": [
-       {
-     "id": 1,
-     "name": "Percy",
-     "image": "https://www.bluemoonmeadows.org/2019-dogs/bennie.jpg",
-     "breed": "Beagle",
-     "size": "Medium",
-     "age": "3",
-     "foster": true,
-     "adopted": false
-       },
-
-       {
-     "id": 2,
-     "name": "Champ",
-     "image": "https://bloximages.newyork1.vip.townnews.com/lancasteronline.com/content/tncms/assets/v3/editorial/6/da/6da9b57e-6f2e-11e8-bd59-ff5dde2b444b/5b2152f75e50b.image.jpg?resize=1429%2C1449",
-     "breed": "Pitbull",
-     "size": "Large",
-     "age": "4",
-     "foster": false,
-     "adopted": false
-       }
-     ]
-   
+  "dogs": [
+    {
+      "id": 1,
+      "name": "Percy",
+      "image": "https://www.bluemoonmeadows.org/2019-dogs/bennie.jpg",
+      "breed": "Beagle",
+      "size": "Medium",
+      "age": "3",
+      "foster": true,
+      "adopted": "In Shelter"
+    },
+    {
+      "id": 2,
+      "name": "Champ",
+      "image": "https://bloximages.newyork1.vip.townnews.com/lancasteronline.com/content/tncms/assets/v3/editorial/6/da/6da9b57e-6f2e-11e8-bd59-ff5dde2b444b/5b2152f75e50b.image.jpg?resize=1429%2C1449",
+      "breed": "Pitbull",
+      "size": "Large",
+      "age": "4",
+      "foster": false,
+      "adopted": "Adopted"
+    }
+  ]
 }

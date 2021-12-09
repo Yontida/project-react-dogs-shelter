@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AllDogsList from "./AllDogsList";
+import AddNewDogForm from "./AddNewDogForm";
+import FosterList from "./FosterList";
 
 
 function DogMainContainer() {
@@ -7,37 +9,51 @@ function DogMainContainer() {
   const [ dogs, setDogs ] = useState( [] )
   console.log("STATE of dogs: ", dogs)
 
+  const [ fosters, setFosters ] = useState( [] )
+
   const baseURL = "http://localhost:3000/dogs"
 
 
-useEffect( () => {
+  useEffect( () => {
 
   fetch(baseURL)
   .then( r => r.json() )
   .then( 
     ( fetchedData ) => {
         setDogs( fetchedData ) 
+
+        let filterFosters = fetchedData.filter( 
+          (eachDog) => {
+            return(eachDog.foster === true )
+
+        } )
+        setFosters( [ ...filterFosters ] )
     } 
   )
-}, [])
+}, []);
 
 
-// function randeringAllDogs () {
-//   dogs.map( 
-    
-  //   (eachDogObj) => {
-
-  //   return eachDogObj.name
-  // } )
-
-// }
+const handleAddNewDog = (newDog) => {
+  let newDogArray = [ newDog, ...dogs ];
+  setDogs(newDogArray);
+}
 
 
   return (
     <div >
 
+
       <AllDogsList 
           dogs={dogs}
+
+      />
+
+      <AddNewDogForm 
+          handleAddNewDog={handleAddNewDog}
+      />
+
+      <FosterList 
+          fosters={fosters}
       />
 
 
