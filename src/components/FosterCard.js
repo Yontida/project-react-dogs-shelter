@@ -10,7 +10,6 @@ function FosterCard( { fosterData } ) {
         {/* <p>Size: {fosterData.size}</p>
         <p>age: {fosterData.age}</p> */}
       
-
     </div>
   );
 }

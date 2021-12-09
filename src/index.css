@@ -7,35 +7,40 @@
 
 body {
   font-family: "Playfair Display", sans-serif;
+  /* background: url('./image/smooth-stucco-wall_1194-7087.jpeg'); */
+  /* background-color: #E8D9C2; */
 }
 
 
 .header{
+  height: 100px;
   text-align: center;
-  /* background-color: cadetblue; */
+  background-color: rgb(242, 201, 145);;
 }
 
 .route-header{
+  height: 50px;
   text-align: center;
-  background-color: burlywood;
+  background-color: #a88e7a;
+  /* background-color: rgb(242, 201, 145);; */
 }
 
 
 
-.class-body{
-  max-width: 40%;
-  margin: 1rem;
+.class-body{ 
   text-align: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  /* 
-  max-height: 310px;
-  max-width: 400px;
-  width: 100%; */
+  /* flex-wrap: wrap; */
+  /* flex-direction: column; */
+  /* max-height: 310px; */
+  /* max-width: 400px; */
+  /* width: 100%;  */
+  /* max-width: 40%; */
+  margin: 1rem;
+  flex-direction: row-reverse;
 }
 
 img {
-  max-width: 40%;
+  max-width: 20%;
 }
 
 
@@ -48,4 +53,8 @@ section {
 
 
 
+.foster-card{
+  text-align: center;
+  margin: 1rem;
+}
 
