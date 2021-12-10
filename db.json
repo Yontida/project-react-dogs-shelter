@@ -28,9 +28,11 @@
       "breed": "Unknown",
       "size": "Small",
       "age": "2",
-      "foster": false,
+      "foster": true,
       "adopted": false,
-      "id": 3
+      "id": 3,
+      "fosterby": "Lee",
+      "contact": "lee@mmail.com"
     },
     {
       "name": "Coco",
@@ -41,36 +43,6 @@
       "foster": false,
       "adopted": false,
       "id": 4
-    },
-    {
-      "name": "aaaa",
-      "image": "https://i.guim.co.uk/img/media/fe1e34da640c5c56ed16f76ce6f994fa9343d09d/0_174_3408_2046/master/3408.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=0d3f33fb6aa6e0154b7713a00454c83d",
-      "breed": "aaaaa",
-      "size": "aaaa",
-      "age": "2",
-      "foster": false,
-      "adopted": false,
-      "id": 5
-    },
-    {
-      "name": "Test",
-      "image": "ssss",
-      "breed": "ssss",
-      "size": "ssss",
-      "age": "4",
-      "foster": false,
-      "adopted": false,
-      "id": 6
-    },
-    {
-      "name": "new ",
-      "image": "https://i.insider.com/5484d9d1eab8ea3017b17e29?width=600&format=jpeg&auto=webp",
-      "breed": "hhh",
-      "size": "Large",
-      "age": "4",
-      "foster": false,
-      "adopted": false,
-      "id": 7
     }
   ]
 }

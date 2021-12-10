@@ -4,14 +4,7 @@ import AddNewDogForm from "./AddNewDogForm";
 import FosterList from "./FosterList";
 import NavBar from "./NavBar";
 
-// import { Route } from 'react-router-dom';
-// import { BrowserRouter as Route , Switch } from 'react-router-dom';
-
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 function DogMainContainer() {
