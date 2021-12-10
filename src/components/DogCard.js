@@ -1,13 +1,13 @@
 import React from "react";
 
 
-function DogCard( { dogData } ) {
+function DogCard( { dogData, deleteDogRequest } ) {
 
 // const [ isInShelter, setIsInShelter ] =  useState(true)
-
 // const handleToggleAdopt = (dogsObj) => {
 //     setIsInShelter( (isInShelter ) => !isInShelter )
 //   }
+
 
 
   return (
@@ -20,8 +20,9 @@ function DogCard( { dogData } ) {
         <p>Breed: {dogData.breed}</p>
         <p>Size: {dogData.size}</p>
         <p>Age: {dogData.age}</p>
-        {/* <p>Status: {dogData.adopted}</p> */}
-
+      <br></br>
+      <button onClick={() => {deleteDogRequest(dogData.id)}
+      }>Delete</button>
 
       {/* Button handleToggleAdopt */}
       {/* {isInShelter ? (
@@ -31,6 +32,7 @@ function DogCard( { dogData } ) {
       ) : (
         <button onClick={handleToggleAdopt}>Adopted</button>
       )} */}
+
 
     </div>
     

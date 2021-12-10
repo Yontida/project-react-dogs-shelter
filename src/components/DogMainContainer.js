@@ -42,6 +42,20 @@ const handleAddNewDog = (newDog) => {
 }
 
 
+const handleDeleteDog = (dogToDelete) => {
+
+  let updatedDogArray = dogs.filter( (eachDog) => {
+      return eachDog.id !== dogToDelete
+  })
+    setDogs( [...updatedDogArray] )
+
+  
+  fetch(`http://localhost:3000/dogs/${dogToDelete}`, {
+      method: "DELETE",
+    });
+}
+
+
   return (
 
     <div >
@@ -56,6 +70,7 @@ const handleAddNewDog = (newDog) => {
 
       <Route path="/" element={<AllDogsList 
           dogs={dogs}
+          handleDeleteDog={handleDeleteDog}
       />} />
 
       {/* <Route exact path="/">

@@ -2,14 +2,14 @@ import React from "react";
 import DogCard from "./DogCard";
 import SearchBar from "./SearchBar";
 
-function AllDogsList( { dogs } ) {
+function AllDogsList( { dogs, handleDeleteDog } ) {
 
 
 
   return (
 
     <div>
-      <div className="route-header"> <h2>All DOGS</h2> </div>
+      <div className="route-header"> <h2>All Dogs Available For Adoption</h2> </div>
 
 
       {/* FIlter bar */}
@@ -30,6 +30,7 @@ function AllDogsList( { dogs } ) {
             <DogCard 
                 key={eachDogObj.id}
                 dogData={eachDogObj}
+                deleteDogRequest={handleDeleteDog}
             />
             )}
 
