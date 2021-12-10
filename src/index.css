@@ -22,7 +22,6 @@ body {
   height: 50px;
   text-align: center;
   background-color: #a88e7a;
-  /* background-color: rgb(242, 201, 145);; */
 }
 
 .button {
@@ -41,8 +40,6 @@ body {
   font-size: 16px;
 }
 
-
-
 .button-2 {
   background-color: bisque; 
   border: none;
@@ -53,7 +50,6 @@ body {
   display: inline-block;
   font-size: 16px;
 }
-
 
 .button-3 {
   background-color: burlywood; 
@@ -66,16 +62,6 @@ body {
   font-size: 16px;
 }
 
-/* .class-body{ 
-  text-align: center;
-  margin: 1rem;
-  flex-direction: row-reverse;
-} */
-
-img {
-  max-width: 20%;
-}
-
 
 section {
   padding: 2rem;
@@ -84,22 +70,45 @@ section {
   align-items: center;
 }
 
-
-.foster-card{
-  text-align: center;
-  margin: 1rem;
+.search-bar {
+  text-align: right;
+  margin-right: 8px;
 }
 
-.cards {
-  list-style: none;
+
+img {
+  max-width: 200px;
+}
+
+
+.dog-container {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  flex-direction: row;
   flex-wrap: wrap;
-  flex: 200px;
 }
 
 .card {
-  margin: 1rem;
-  list-style: none;
+  flex: 1;
+  background: blanchedalmond;
+  padding: 20px;
+  font-size: 15px;
+  margin: 3px;
+  
 }
+
+.card-img{
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+  .dog-container{
+    flex-direction: column;
+  }
+}
+
 
 
 

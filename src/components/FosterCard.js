@@ -2,7 +2,8 @@ import React from "react";
 
 function FosterCard( { fosterData } ) {
   return (
-    <div className="foster-card">
+    
+    <div className="card">
 
         <img src={fosterData.image} alt={fosterData.name} />
         <h3>{fosterData.name}</h3>

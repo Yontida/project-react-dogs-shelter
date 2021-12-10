@@ -3,7 +3,8 @@ import React from "react";
 function SearchBar() {
   return (
     <div className="searchbar">
-      <label htmlFor="search">Search Dogs:</label>
+      <br></br>
+      <label htmlFor="search">Search Dogs : </label>
       <input
         type="text"
         id="searchBar"

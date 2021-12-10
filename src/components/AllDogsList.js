@@ -19,21 +19,23 @@ function AllDogsList( { dogs } ) {
           <option value="true">In Shelter</option>
           <option value="false">Adopted</option>
         </select> */}
-
-       <SearchBar /> 
-
-      <div>
-      {dogs.map( (eachDogObj) => 
-
-        <DogCard 
-            key={eachDogObj.id}
-            dogData={eachDogObj}
-
-        />
       
-        )}
+      <div className="search-bar">
+       <SearchBar /> 
       </div>
-    </div>
+
+        <div className="dog-container">
+          {dogs.map( (eachDogObj) => 
+
+            <DogCard 
+                key={eachDogObj.id}
+                dogData={eachDogObj}
+            />
+            )}
+
+        </div>
+
+      </div>
   );
 }
 

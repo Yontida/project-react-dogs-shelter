@@ -11,14 +11,15 @@ function DogCard( { dogData } ) {
 
 
   return (
-    <div >
+ 
 
-      <li className="card"> 
-        <img src={dogData.image} alt={dogData.name} />
+        <div className="card">
+
+        <img className="card-img" src={dogData.image} alt={dogData.name} />
         <h3>{dogData.name}</h3>
         <p>Breed: {dogData.breed}</p>
         <p>Size: {dogData.size}</p>
-        <p>age: {dogData.age}</p>
+        <p>Age: {dogData.age}</p>
         {/* <p>Status: {dogData.adopted}</p> */}
 
 
@@ -31,8 +32,8 @@ function DogCard( { dogData } ) {
         <button onClick={handleToggleAdopt}>Adopted</button>
       )} */}
 
-    </li>
     </div>
+    
   );
 }
 

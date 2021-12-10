@@ -6,7 +6,7 @@ function FosterList( {fosters} ) {
     <div >
       <div className="route-header"> <h2>Dogs In Foster Home</h2> </div>
 
-      <ul className="cards">
+      <div className="dog-container">
       {fosters.map( (eachDogObj) => 
 
       <FosterCard 
@@ -14,7 +14,7 @@ function FosterList( {fosters} ) {
           fosterData={eachDogObj}
       />
       )}
-      </ul>
+      </div>
 
     </div>
   );

@@ -19,8 +19,10 @@
       "breed": "Pitbull",
       "size": "Large",
       "age": "4",
-      "foster": false,
-      "adopted": false
+      "foster": true,
+      "adopted": false,
+      "fosterby": "Miller",
+      "contact": "miller@mmail.com"
     },
     {
       "name": "Miki",
@@ -43,6 +45,58 @@
       "foster": false,
       "adopted": false,
       "id": 4
+    },
+    {
+      "name": "Nancy",
+      "image": "https://chico.ca.us/sites/main/files/imagecache/medium/main-images/dog_license.jpg?1591913020",
+      "breed": "Corgi",
+      "size": "Small",
+      "age": "2",
+      "foster": false,
+      "adopted": false,
+      "id": 5
+    },
+    {
+      "name": "Walter",
+      "image": "https://www.mansfieldtexas.gov/ImageRepository/Document?documentId=6501",
+      "breed": "Unknown",
+      "size": "Large",
+      "age": "5",
+      "foster": false,
+      "adopted": false,
+      "id": 6
+    },
+    {
+      "name": "Nina",
+      "image": "https://www.milofoundation.org/wp-content/uploads/2020/06/kb_milo_62-scaled-847x1024.jpg",
+      "breed": "shih tzu",
+      "size": "Small",
+      "age": "4",
+      "foster": false,
+      "adopted": false,
+      "id": 7
+    },
+    {
+      "name": "Milo",
+      "image": "https://www.staf.org/wp-content/uploads/2021/08/dog-adoption.jpg",
+      "breed": "Unknown",
+      "size": "Medium",
+      "age": "3",
+      "foster": false,
+      "adopted": false,
+      "id": 8
+    },
+    {
+      "name": "Taco",
+      "image": "https://scontent.xx.fbcdn.net/v/t1.15752-9/263796281_616634626047517_8669982366571179288_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=aee45a&_nc_ohc=t6T964u7sLsAX-fTloF&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=c591d085af9219b99f7ef0c3835738b1&oe=61D8CFB1",
+      "breed": "Unknown",
+      "size": "Large",
+      "age": "10",
+      "foster": true,
+      "adopted": false,
+      "id": 9,
+      "fosterby": "Karvasky",
+      "contact": "karvasky@mmail.com"
     }
   ]
 }
