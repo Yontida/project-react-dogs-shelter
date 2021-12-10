@@ -98,7 +98,7 @@ const handleSubmit = (event) => {
           /><br></br><br></br>
 
 
-          <button type="submit">Add Dog</button>
+          <button className="button-add" type="submit">Add Dog</button>
           <br></br><br></br>
 
         </form>
